@@ -1,0 +1,31 @@
+{
+  "name": "bixbite.io",
+  "private": false,
+  "workspaces": [
+    "api",
+    "app",
+    "kit",
+    "packages/*"
+  ],
+  "packageManager": "npm@9.6.3",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "dev:kit": "turbo run dev --filter=kit",
+    "build:kit": "turbo run build --filter=kit",
+    "lint": "eslint --ext .js,.ts,.svelte, .",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,css,pcss,html,svelte}\""
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "eslint-plugin-svelte": "^2.33.0",
+    "prettier": "^3.0.2",
+    "prettier-plugin-svelte": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "turbo": "latest",
+    "typescript": "^5.1.6"
+  }
+}
